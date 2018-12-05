@@ -7,163 +7,103 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaa525f7-32c7-4464-a678-33deebf5177d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web3_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Latest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain (1)/db/PersonDbInMemory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain (1)/db/PersonRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain (1)/model/DomainException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain (1)/model/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain (1)/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain (1)/model/ShopService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/DbException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonDBSQL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonDbInMemory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDBSQL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDbInMemory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/DomainException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/ShopService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/shop/Cart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/shop/ProductOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/test/view/SeleniumWorksWellTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/ui/controller/Servlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/ui/view/DesktopAddPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-config-api-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-config-impl-base-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-config-spi-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-container-impl-base-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-container-spi-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-container-test-api-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-container-test-impl-base-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-container-test-spi-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-core-api-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-core-impl-base-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-core-spi-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-junit-container-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-junit-core-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-test-api-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-test-impl-base-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/arquillian-test-spi-1.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/jstl-1.2(1).jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/junit4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/postgresql-42.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/shrinkwrap-api-1.2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/shrinkwrap-descriptors-api-base-2.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/shrinkwrap-descriptors-spi-2.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/shrinkwrap-impl-base-1.2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/lib/shrinkwrap-spi-1.2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/images/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/images/bannerKlein.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/personoverview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/productoverview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/signUp.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/db/DbException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/db/PersonDBSQL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/db/PersonDbInMemory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/db/PersonRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDBSQL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDbInMemory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/model/DomainException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/model/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/model/ShopService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/model/shop/Cart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/domain/model/shop/ProductOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/ui/controller/Servlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/web3/ui/view/DesktopAddPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/artifacts/web3_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/libraries/Arquillian_JUnit_Latest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/libraries/junit4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/libraries/postgresql_42_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/db/DbException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/db/PersonDBSQL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/db/PersonDbInMemory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/db/PersonRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/model/DomainException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/model/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/model/shop/Cart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/domain/model/shop/ProductOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.annotation.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.ejb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.jms.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.persistence.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.resource.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.servlet.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.servlet.jsp.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/lib/javax.transaction.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/ui/view/DesktopAddPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/images/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/images/bannerKlein.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/personoverview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/productoverview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web/signUp.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/web3/web3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/db/DbException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/db/PersonDBSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/db/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/db/ProductDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/db/ProductDBSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/db/ProductDbInMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/DomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/ShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/shop/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/shop/ProductOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/controller/Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/view/DesktopAddPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/bannerKlein.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/personoverview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/productoverview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/signUp.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/service/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/ControllerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/HandlerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/HomePageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/RequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/product/ProductAddHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/product/ProductConfirmDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/product/ProductDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/product/ProductFormAddHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/product/ProductFormUpdateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/product/ProductOverviewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/product/ProductUpdateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/user/UserConfirmDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/user/UserDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/user/UserFormSignUpHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/user/UserOverviewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controller/handler/user/UserSignUpHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/handler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/errors.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/products.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/shopCartOverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonDBSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonDBSQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonDbInMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/PersonRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDBSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDBSQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/db/ProductDbInMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/ShopService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/shop/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/shop/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/shop/ProductOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/domain/model/shop/ProductOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/ui/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/classes/ui/controller/Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/personoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/productoverview.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web3_war_exploded/signUp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/db/PersonDBSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/db/PersonDBSQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/db/PersonDbInMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/db/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/db/PersonRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDBSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDBSQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/db/ProductDbInMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/model/ShopService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/model/shop/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/model/shop/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/domain/model/shop/ProductOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/domain/model/shop/ProductOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/web3/ui/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web3/ui/controller/Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/domain/db/PersonDBSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/domain/db/PersonDBSQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/domain/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/domain/db/PersonDbInMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/domain/db/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/domain/db/PersonRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/domain/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/domain/db/ProductDbInMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/domain/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/domain/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/domain/model/shop/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/domain/model/shop/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/domain/model/shop/ProductOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/domain/model/shop/ProductOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/ui/view/DesktopAddPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/web/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/web/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/web/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/web/personoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/web/productoverview.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/web3/web/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/web3/web/signUp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/db/PersonDBSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/PersonDBSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/db/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/db/ProductDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/ProductDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/db/ProductDBSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/ProductDBSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/db/ProductDbInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/ProductDbInMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/ShopService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/shop/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/shop/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/shop/ProductOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/shop/ProductOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controller/Servlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/view/DesktopAddPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/personoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/productoverview.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signUp.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -230,34 +170,42 @@
     <session id="-328571159">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="10" />
-          <entry key="jsp" value="6" />
+          <entry key="css" value="2" />
+          <entry key="java" value="54" />
+          <entry key="jsp" value="14" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="10" />
-          <entry key="JSP" value="6" />
+          <entry key="CSS" value="2" />
+          <entry key="JAVA" value="54" />
+          <entry key="JSP" value="14" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="216" />
-          <entry key="jsp" value="108" />
+          <entry key="css" value="6" />
+          <entry key="java" value="245" />
+          <entry key="jsp" value="169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="216" />
-          <entry key="JSP" value="108" />
+          <entry key="CSS" value="6" />
+          <entry key="JAVA" value="245" />
+          <entry key="JSP" value="169" />
         </counts>
       </usages-collector>
     </session>
@@ -268,42 +216,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/controller/Servlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="79" column="52" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/productoverview.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="35" column="54" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/model/shop/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="57" column="35" lean-forward="true" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+            <state relative-caret-position="289">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#258#259#0" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#1308#1309#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
-                <element signature="e#1641#1642#0" expanded="true" />
-                <element signature="e#1686#1687#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/product/ProductAddHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="35" column="58" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/product/ProductFormAddHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -311,92 +248,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/model/shop/ProductOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="53" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="53" />
+            <state relative-caret-position="340">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1140#1141#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/Product.java">
+        <entry file="file://$PROJECT_DIR$/web/products.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/ShopService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="442">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/domain/db/ProductDbInMemory.java">
+        <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="434">
+              <caret line="117" column="15" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/db/ProductDB.java">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/personoverview.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/shopCartOverview.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -421,39 +322,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/web/productoverview.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/web/personoverview.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/domain/model/DomainException.java" />
         <option value="$PROJECT_DIR$/src/domain/db/UserRepository.java" />
         <option value="$PROJECT_DIR$/test/test/view/rgisterTest.java" />
         <option value="$PROJECT_DIR$/src/domain/SeleniumWorksWellTest.java" />
         <option value="$PROJECT_DIR$/test/test/view/SeleniumWorksWellTest.java" />
-        <option value="$PROJECT_DIR$/src/domain/db/PersonRepository.java" />
         <option value="$PROJECT_DIR$/src/test/view/SeleniumWorksWellTest.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/domain/model/Person.java" />
         <option value="$PROJECT_DIR$/web/signUp.jsp" />
-        <option value="$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java" />
         <option value="$PROJECT_DIR$/web/error.jsp" />
         <option value="$PROJECT_DIR$/src/ui/view/DesktopAddPerson.java" />
-        <option value="$PROJECT_DIR$/src/domain/db/ProductDBSQL.java" />
-        <option value="$PROJECT_DIR$/src/domain/db/PersonDBSQL.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/personoverview.jsp" />
-        <option value="$PROJECT_DIR$/src/domain/model/shop/ProductOrder.java" />
-        <option value="$PROJECT_DIR$/src/domain/model/Product.java" />
-        <option value="$PROJECT_DIR$/src/domain/model/shop/Cart.java" />
-        <option value="$PROJECT_DIR$/web/shopCartOverview.jsp" />
         <option value="$PROJECT_DIR$/src/ui/controller/Servlet.java" />
         <option value="$PROJECT_DIR$/web/productoverview.jsp" />
         <option value="$PROJECT_DIR$/src/domain/model/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/domain/model/Person.java" />
+        <option value="$PROJECT_DIR$/src/domain/model/Product.java" />
+        <option value="$PROJECT_DIR$/src/domain/db/PersonRepository.java" />
+        <option value="$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java" />
+        <option value="$PROJECT_DIR$/src/domain/model/shop/User.java" />
+        <option value="$PROJECT_DIR$/src/domain/model/shop/Product.java" />
+        <option value="$PROJECT_DIR$/src/domain/model/User.java" />
+        <option value="$PROJECT_DIR$/src/domain/db/PersonDBSQL.java" />
+        <option value="$PROJECT_DIR$/src/domain/service/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/ui/controller/handler/product/ProductDeleteHandler.java" />
+        <option value="$PROJECT_DIR$/src/domain/db/ProductDBSQL.java" />
+        <option value="$PROJECT_DIR$/src/domain/db/ProductDB.java" />
         <option value="$PROJECT_DIR$/src/domain/db/ProductDbInMemory.java" />
+        <option value="$PROJECT_DIR$/web/shopCartOverview.jsp" />
+        <option value="$PROJECT_DIR$/src/ui/controller/handler/shopcart/ShopCartOverviewHandler.java" />
+        <option value="$PROJECT_DIR$/src/domain/model/shop/ProductOrder.java" />
+        <option value="$PROJECT_DIR$/src/domain/model/shop/Cart.java" />
+        <option value="$PROJECT_DIR$/src/ui/controller/handler/shopcart/ShopCartAddHandler.java" />
+        <option value="$PROJECT_DIR$/web/products.jsp" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
       </list>
     </option>
   </component>
@@ -470,10 +376,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="168" />
+    <option name="y" value="-17" />
     <option name="width" value="974" />
-    <option name="height" value="961" />
+    <option name="height" value="787" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -501,7 +408,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -561,7 +467,17 @@
               <item name="web3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="week01" type="b2602c69:ProjectViewProjectNode" />
@@ -572,12 +488,19 @@
               <item name="week01" type="b2602c69:ProjectViewProjectNode" />
               <item name="web3" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web3" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -586,12 +509,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542905805154" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543432834601" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -603,12 +526,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="domain" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="domain.db" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\TestingOpdrachtDeel2\webshop\web3\web" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -617,6 +534,20 @@
       <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\web3\src\ui\controller" />
       <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\web3\src\domain\db" />
       <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\web3\test\test\view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="domain.service" />
+      <recent name="domain.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\TestingOpdrachtDeel2\webshop\web3\src\ui\controller\handler\shopcart" />
+      <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\TestingOpdrachtDeel2\webshop\web3\web" />
+      <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\TestingOpdrachtDeel2\webshop\web3\src\ui\controller" />
+      <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\TestingOpdrachtDeel2\webshop\web3\src\domain\model" />
+      <recent name="C:\Users\hamid\Desktop\ucll\tweedejaar\eerste semester\TestingOpdrachtDeel2\webshop\web3\src\domain\model\shop" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="domain.db" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -631,7 +562,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.shopCartOverview.jsp">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.5">
     <configuration name="DesktopAddPerson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ui.view.DesktopAddPerson" />
       <module name="web3" />
@@ -803,7 +734,10 @@
       <workItem from="1542632852875" duration="360000" />
       <workItem from="1542820696840" duration="1315000" />
       <workItem from="1542822147870" duration="1822000" />
-      <workItem from="1542899927096" duration="5174000" />
+      <workItem from="1542899927096" duration="5418000" />
+      <workItem from="1543065424790" duration="31000" />
+      <workItem from="1543429710767" duration="3273000" />
+      <workItem from="1543503767650" duration="11000" />
     </task>
     <servers />
   </component>
@@ -828,7 +762,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38414000" />
+    <option name="totallyTimeSpent" value="41973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,9 +774,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="532" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.5404814" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="1" sideWeight="0.502455" side_tool="true" weight="0.27665246" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -851,7 +786,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.7925532" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36593407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -859,7 +794,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32967034" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32417583" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32087913" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -883,30 +818,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/db/UserRepository.java" />
-    <entry file="file://$PROJECT_DIR$/test/test/view/rgisterTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDB.java" />
-    <entry file="file://$PROJECT_DIR$/src/domain/model/DomainException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web3.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../apache-tomcat-9.0.5/webapps/ROOT/WEB-INF/classes/controller/Controller.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/java/sql/DriverManager.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -915,17 +826,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/Person.java">
+    <entry file="file://$PROJECT_DIR$/web/error.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/signUp.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/error.jsp">
+    <entry file="jar://$PROJECT_DIR$/../selenium-server-standalone-3.8.1.jar!/javax/servlet/GenericServlet.class" />
+    <entry file="file://$PROJECT_DIR$/src/ui/view/DesktopAddPerson.java" />
+    <entry file="file://$PROJECT_DIR$/web/shopOrderConfirmation.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/test/view/SeleniumWorksWellTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="79" column="52" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/productoverview.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/db/DbException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/shop/Person.java" />
+    <entry file="file://$PROJECT_DIR$/src/domain/model/shop/DomainException.java" />
+    <entry file="file://$PROJECT_DIR$/src/domain/model/shop/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/domain/model/shop/Product.java" />
+    <entry file="file://$PROJECT_DIR$/src/domain/db/PersonRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/DomainException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDBSQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/service/ShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/user/UserSignUpHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/product/ProductFormUpdateHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/ControllerException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/HomePageHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/user/UserFormSignUpHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/user/UserDeleteHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/product/ProductOverviewHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/user/UserConfirmDeleteHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/product/ProductDeleteHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/db/ProductDBSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/db/ProductDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/db/ProductDbInMemory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <element signature="e#256#273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/errors.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/head.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/shopcart/ShopCartAddHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/shopcart/ShopCartOverviewHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/domain/model/shop/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/product/ProductAddHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="58" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/controller/handler/product/ProductFormAddHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/shop/ProductOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/products.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -936,186 +1053,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/signUp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../selenium-server-standalone-3.8.1.jar!/javax/servlet/GenericServlet.class" />
     <entry file="file://$PROJECT_DIR$/web/personoverview.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/view/DesktopAddPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/db/ProductDBSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/db/PersonRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDBSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/db/ProductDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/shopOrderConfirmation.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/view/SeleniumWorksWellTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/shop/ProductOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="646">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/shopCartOverview.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="43" column="73" selection-start-line="43" selection-start-column="73" selection-end-line="43" selection-end-column="73" />
+        <state relative-caret-position="221">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/shop/Cart.java">
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="57" column="35" lean-forward="true" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1686#1687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/ShopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/productoverview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/controller/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="79" column="52" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/db/ProductDbInMemory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="434">
+          <caret line="117" column="15" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1173,7 +1128,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>web3</last-edited>
+          <last-edited>Web|web3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

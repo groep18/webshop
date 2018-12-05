@@ -1,7 +1,7 @@
 package domain.db;
 
-import domain.model.Person;
-import domain.model.Product;
+import domain.model.DomainException;
+import domain.model.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,55 +9,187 @@ import java.util.List;
 import java.util.Properties;
 
 public class PersonDBSQL implements PersonRepository {
+    private PreparedStatement statement;
+    private Connection connection;
+    private Properties properties;
+    private String url;
+    private String schema;
 
-    private Properties properties = new Properties();
-    private String url = "jdbc:postgresql://databanken.ucll.be:51819/2TX38";
-    private String currentSchama;
-    public PersonDBSQL(Properties properties) {
+    public PersonDBSQL(Properties properties) throws DbException {
         try {
             Class.forName("org.postgresql.Driver");
             this.properties = properties;
             this.url = properties.getProperty("url");
-            this.currentSchama = properties.getProperty("currentSchema");
+            this.schema = properties.getProperty("currentSchema");
         } catch (ClassNotFoundException e) {
             throw new DbException(e.getMessage(), e);
         }
     }
 
+
     @Override
-    public void add(Person person) {
-        if (person == null) {
-            throw new DbException("Nothing to add.");
+    public User get(String id) throws DbException, DomainException {
+        if(id == null || id.isEmpty()) {
+            throw new DbException("No user ID given.");
         }
-        String sql = "INSERT INTO person (userid, email, firstname, lastname, pass) VALUES ('"
-                + person.getUserid() + "', '" + person.getEmail() + "', '" + person.getFirstName() + "', '"
-                + person.getLastName() + "', '" + person.getPassword() + "')";
-        try (Connection connection = DriverManager.getConnection(url, properties);
-             Statement statement = connection.createStatement()) {
-            statement.execute(sql);
+
+
+        try {
+            String sql = "SELECT * FROM " + schema + ".person "
+                    + "WHERE LOWER(userID) = LOWER(?)";
+
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, id);
+
+            ResultSet result = statement.executeQuery();
+
+            if(!result.isBeforeFirst()) {
+                throw new DbException("No user with given ID found.");
+            }
+
+            result.next();
+
+            String email = result.getString("email");
+            String password = result.getString("password");
+            String firstName = result.getString("firstName");
+            String lastName = result.getString("lastName");
+
+            User u = new User(id, password,  email, firstName, lastName);
+
+            return u;
         } catch (SQLException e) {
-            throw new DbException(e);
+            throw new DbException(e.getMessage());
         }
     }
 
     @Override
-    public List<Person> getAll() {
-        List<Person> persons = new ArrayList<>();
+    public List<User> getAll() throws DbException, DomainException {
+        List users = new ArrayList<User>();
         try (Connection connection = DriverManager.getConnection(url, properties);
-             Statement statement = connection.createStatement()){
-            ResultSet result = statement.executeQuery("SELECT * FROM person");
-            while (result.next()) {
-                String userid = result.getString("userid");
+             Statement statement = connection.createStatement();){
+            ResultSet result = statement.executeQuery("SELECT * FROM " + schema + ".person ORDER BY userid ASC");
+
+            while(result.next()) {
+                String id = result.getString("userid");
                 String email = result.getString("email");
-                String firstName = result.getString("firstname");
-                String lastName = result.getString("lastname");
                 String password = result.getString("pass");
-                Person person = new Person(userid, email, firstName, lastName, password);
-                persons.add(person);
+                String firstName = result.getString("firstName");
+                String lastName = result.getString("lastName");
+
+                User u = new User(id, password, email, firstName, lastName);
+                users.add(u);
             }
         } catch (SQLException e) {
             throw new DbException(e.getMessage(), e);
         }
-        return persons;
+        return users;
+    }
+
+
+
+    @Override
+    public void add(User user) throws DbException {
+        if(user == null) {
+            throw new DbException("No user to add.");
+        }
+
+        try {
+            String sql = "SELECT * FROM " + schema + ".person "
+                    + "WHERE userID = ?";
+
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, user.getId());
+
+            ResultSet result = statement.executeQuery();
+
+            if(result.isBeforeFirst()) {
+                throw new DbException("User already exists");
+            }
+
+            sql = "INSERT INTO " + schema + "person (userID, email, password, firstName, lastName)"
+                    + "VALUES(?,?,?,?,?,?)";
+
+            statement = connection.prepareStatement(sql);
+
+            statement.setString(1, user.getId());
+            statement.setString(2, user.getEmail());
+            statement.setString(3, user.getPassword());
+            statement.setString(4, user.getFirstName());
+            statement.setString(5, user.getLastName());
+
+            statement.executeUpdate();
+        } catch(SQLException e) {
+            throw new DbException(e.getMessage());
+        }
+    }
+
+    @Override
+    public void update(User user) throws DbException {
+        if(user == null) {
+            throw new DbException("No user to update");
+        }
+
+        try {
+
+            String sql = "SELECT * FROM " + schema + ".person "
+                    + "WHERE userID = ?";
+
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, user.getId());
+
+            ResultSet result = statement.executeQuery();
+
+            if(!result.isBeforeFirst()) {
+                throw new DbException("No user found with given ID.");
+            }
+
+            sql = "UPDATE " + schema + ".person "
+                    + "SET email = ?, password = ?, firstName = ?, lastName = ? "
+                    + "WHERE userID = ?";
+
+            statement = connection.prepareStatement(sql);
+
+            statement.setString(1, user.getEmail());
+            statement.setString(2, user.getPassword());
+            statement.setString(3, user.getFirstName());
+            statement.setString(4, user.getLastName());
+            statement.setString(5, user.getId());
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new DbException(e.getMessage());
+        }
+    }
+
+    @Override
+    public void delete(String id) throws DbException {
+        if(id == null || id.isEmpty()) {
+            throw new DbException("No user ID given.");
+        }
+
+
+        try {
+            String sql = "SELECT * FROM " + schema + ".person "
+                    + "WHERE userID = ?";
+
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, id);
+
+            ResultSet result = statement.executeQuery();
+
+            if(!result.isBeforeFirst()) {
+                throw new DbException("No user with given ID found.");
+            }
+
+            sql = "DELETE FROM " + schema + ".person "
+                    + "WHERE userID = ?";
+
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, id);
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new DbException(e.getMessage());
+        }
     }
 }

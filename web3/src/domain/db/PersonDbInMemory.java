@@ -1,61 +1,59 @@
 package domain.db;
 
-import domain.model.Person;
+import domain.model.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PersonDbInMemory {
-    private Map<String, Person> persons = new HashMap<>();
+public class PersonDbInMemory implements PersonRepository {
+    private Map<String, User> users = new HashMap<>();
 
     public PersonDbInMemory () {
-        Person administrator = new Person("001", "admin@ucll.be", "t", "Ad", "Ministrator");
-        Person admin2 = new Person("002", "admin2@ucll.be", "tish", "Ola", "Bola");
-        add(administrator);
-        add(admin2);
+        this.users = new HashMap<>();
     }
 
-    public Person get(String personId){
-        if(personId == null){
-            throw new DbException("No id given");
+    @Override
+    public User get(String id){
+        if(id == null || id.isEmpty()){
+            throw new IllegalArgumentException("No ID given.");
         }
-        return persons.get(personId);
+        return users.get(id);
     }
 
-    public List<Person> getAll(){
-        return new ArrayList<Person>(persons.values());
+    @Override
+    public List<User> getAll(){
+        return new ArrayList<User>(users.values());
     }
 
-    public void add(Person person){
-        if(person == null){
-            throw new DbException("No person given");
+    @Override
+    public void add(User user){
+        if(user == null){
+            throw new IllegalArgumentException("No user given.");
         }
-        if (persons.containsKey(person.getUserid())) {
-            throw new DbException("User already exists");
+        if (users.containsKey(user.getId())) {
+            throw new IllegalArgumentException("User already exists.");
         }
-        persons.put(person.getUserid(), person);
+        users.put(user.getId(), user);
     }
 
-    public void update(Person person){
-        if(person == null){
-            throw new DbException("No person given");
+    @Override
+    public void update(User user){
+        if(user == null){
+            throw new IllegalArgumentException("No user given.");
         }
-        if(!persons.containsKey(person.getUserid())){
-            throw new DbException("No person found");
+        if(!users.containsKey(user.getId())){
+            throw new IllegalArgumentException("User not found.");
         }
-        persons.put(person.getUserid(), person);
+        users.put(user.getId(), user);
     }
 
-    public void delete(String personId){
-        if(personId == null){
-            throw new DbException("No id given");
+    @Override
+    public void delete(String id){
+        if(id == null || id.isEmpty()){
+            throw new IllegalArgumentException("No id given.");
         }
-        persons.remove(personId);
-    }
-
-    public int getNumberOfPersons() {
-        return persons.size();
+        users.remove(id);
     }
 }

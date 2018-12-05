@@ -21,7 +21,7 @@ public class Cart {
     }
 
     public void addProduct(Product product, int quantity) throws DomainException {
-        ProductOrder order = new ProductOrder(product, quantity);
+        ProductOrder order = new ProductOrder(product);
         productsOrdered.add(order);
     }
 
@@ -34,17 +34,7 @@ public class Cart {
         return null;
     }
 
-    public void replaceQuantityOrdered(String productId, int quantity) throws DomainException {
-        if (quantity < 0) {
-            throw new DomainException("Quantity cannot be lower than 0.");
-        }
-        if(quantity == 0) {
-            deleteProduct(productId);
-        } else {
-            ProductOrder order = getOrder(productId);
-            order.setQuantity(quantity);
-        }
-    }
+
 
     public void deleteProduct(String productId) {
         ProductOrder order = getOrder(productId);
@@ -59,7 +49,7 @@ public class Cart {
         double total = 0;
         Collection<ProductOrder> orders = productsOrdered;
         for(ProductOrder order : orders){
-            total += order.getTotalPrice();
+            total += order.getProductPrice();
         }
         return total;
     }

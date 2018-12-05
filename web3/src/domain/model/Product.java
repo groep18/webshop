@@ -1,70 +1,61 @@
 package domain.model;
 
 public class Product {
-    private String productId;
-    private String name;
+
+    private String id, name;
     private String description;
     private double price;
+
+    public Product(String productID, String name, String description, double price) {
+        setId(productID);
+        setDescription(description);
+        setPrice(price);
+        this.name = name;
+    }
 
     public Product() {
 
     }
 
-    public Product(String productId, String name, String description, double d) {
-        setProductId(productId);
-        setName(name);
-        setDescription(description);
-        setPrice(d);
+    //GETTERS
+
+    public String getId() {
+        return id;
     }
-    public Product(String name, String description, double d) {
-        setName(name);
-        setDescription(description);
-        setPrice(d);
-    }
-    public String getProductId() {
-        return productId;
-    }
-    public void setProductId(String productId) {
-        this.productId = productId;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        if (name.isEmpty()) {
-            throw new DomainException("No name given");
-        }
-        this.name = name;
-    }
+
     public String getDescription() {
         return description;
     }
+
+    public double getPrice() {
+        return price;
+    }
+
+    //SETTERS
+
+    public void setId(String id) {
+        if(id == null || id.isEmpty()) {
+            throw new IllegalArgumentException("No product ID given.");
+        }
+        this.id = id;
+    }
+
     public void setDescription(String description) {
-        if (description.isEmpty()) {
-            throw new DomainException("No description given");
+        if(description == null || description.isEmpty()) {
+            throw new IllegalArgumentException("No description given.");
         }
 
         this.description = description;
     }
-    public double getPrice() {
-        return price;
-    }
+
     public void setPrice(double price) {
-        if (price<0) {
-            throw new DomainException("Give a valid price");
+        if(price <= 0) {
+            throw new IllegalArgumentException("Price not valid.");
         }
+
         this.price = price;
     }
-    public void setPrice(String price) {
-        if (price.isEmpty()) {
-            throw new DomainException("No price given");
-        }
-        setPrice(Double.valueOf(price));
+    public String getName() {
+        return this.name;
     }
-
-    @Override
-    public String toString(){
-        return getName() + ": " + getDescription() + " - " + getPrice();
-    }
-
 }

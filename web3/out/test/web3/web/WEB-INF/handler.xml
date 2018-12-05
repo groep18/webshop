@@ -1,0 +1,20 @@
+<?xml version ="1.0" encoding  =   "UTF-8"?>
+<!DOCTYPE  properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="home">ui.controller.handler.HomePageHandler</entry>
+
+    <entry key="productOverview">ui.controller.handler.product.ProductOverviewHandler</entry>
+    <entry key="productFormAdd">ui.controller.handler.product.ProductFormAddHandler</entry>
+    <entry key="productFormUpdate">ui.controller.handler.product.ProductFormUpdateHandler</entry>
+    <entry key="productAdd">ui.controller.handler.product.ProductAddHandler</entry>
+    <entry key="productUpdate">ui.controller.handler.product.ProductUpdateHandler</entry>
+    <entry key="productConfirmDelete">ui.controller.handler.product.ProductConfirmDeleteHandler</entry>
+    <entry key="productDelete">ui.controller.handler.product.ProductDeleteHandler</entry>
+
+    <entry key="userFormSignUp">ui.controller.handler.user.UserFormSignUpHandler</entry>
+    <entry key="userOverview">ui.controller.handler.user.UserOverviewHandler</entry>
+    <entry key="userSignUp">ui.controller.handler.user.UserSignUpHandler</entry>
+    <entry key="userConfirmDelete">ui.controller.handler.user.UserConfirmDeleteHandler</entry>
+    <entry key="userDelete">ui.controller.handler.user.UserDeleteHandler</entry>
+</properties>
