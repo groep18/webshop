@@ -18,6 +18,10 @@
 			<c:if test="${sessionScope.user eq null }">
 				<li ${param.title eq 'Sign Up' ? 'id=\"actual\"' : ''}><a href="Controller?action=userFormSignUp">Sign up</a></li>
 			</c:if>
+			<c:when test="${sessionScope.user != null}">
+				<h3>Welcome, ${sessionScope.user.person.firstName}.</h3>
+				<a href="Controller?action=userLogout" id="logOut">Log out</a>
+			</c:when>
 		</ul>
 	</nav>
 	<h2>${param.title}</h2>
