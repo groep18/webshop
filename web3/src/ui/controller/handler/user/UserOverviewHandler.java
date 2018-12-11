@@ -1,20 +1,23 @@
-package ui.controller.handler.user;
+package controller.handler.user;
 
-import domain.db.DbException;
-import domain.model.DomainException;
-import domain.model.User;
-import domain.service.ShopService;
-import ui.controller.handler.HandlerFactory;
-import ui.controller.handler.RequestHandler;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import controller.handler.HandlerFactory;
+import controller.handler.RequestHandler;
+import exception.DBException;
+import exception.ModelException;
+import exception.NotAuthorizedException;
+import model.user.Role;
+import model.user.User;
+import service.ShopService;
 
 public class UserOverviewHandler extends RequestHandler {
 
@@ -23,19 +26,21 @@ public class UserOverviewHandler extends RequestHandler {
 	}
 
 	@Override
-	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws NotAuthorizedException, ServletException, IOException {
+		Role[] roles = {Role.ADMINISTRATOR};
+		checkRole(request, roles);
 		
 		List<User> users;
 		try {
 			users = this.shopService.getUsers();
 			request.setAttribute("users", users);
-		} catch (DbException | DomainException e) {
+		} catch (DBException | ModelException e) {
 			Map<String, String> errors = new HashMap<String, String>();
 			errors.put("ShopService getPersons() error", e.getMessage());
 			request.setAttribute("errors", errors);
 		}
 		
-		RequestDispatcher view = request.getRequestDispatcher("personoverview.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("userOverview.jsp");
 		view.forward(request, response);
 	}
 

@@ -3,6 +3,7 @@ package domain.model;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
 public class Person {
 
     private String email;
@@ -47,22 +48,18 @@ public class Person {
         this.email = email;
     }
 
-    public void setFirstName(String firstName) throws DomainException{
+    public void setFirstName(String firstName) throws DomainException {
         if(firstName == null || firstName.isEmpty()){
             throw new DomainException("No first name given.");
         }
         this.firstName = firstName;
     }
 
-    public void setLastName(String lastName) throws DomainException{
+    public void setLastName(String lastName) throws DomainException {
         if(lastName == null || lastName.isEmpty()){
             throw new DomainException("No last name given.");
         }
         this.lastName = lastName;
     }
 
-    @Override
-    public String toString(){
-        return getFirstName() + " " + getLastName() + ": " + ", " + getEmail();
-    }
 }

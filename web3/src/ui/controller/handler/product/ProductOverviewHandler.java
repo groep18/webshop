@@ -3,8 +3,8 @@ package ui.controller.handler.product;
 import domain.db.DbException;
 import domain.model.Product;
 import domain.service.ShopService;
-import ui.controller.handler.HandlerFactory;
-import ui.controller.handler.RequestHandler;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -28,7 +28,7 @@ public class ProductOverviewHandler extends RequestHandler {
 			products = this.shopService.getProducts();
 
 			request.setAttribute("products", products);
-			RequestDispatcher view = request.getRequestDispatcher("products.jsp");
+			RequestDispatcher view = request.getRequestDispatcher("productOverview.jsp");
 			view.forward(request, response);
 		} catch (DbException e) {
 			Map<String, String> errors = new HashMap<String, String>();
@@ -36,5 +36,5 @@ public class ProductOverviewHandler extends RequestHandler {
 			request.setAttribute("errors", errors);
 		}
 	}
-	
+
 }

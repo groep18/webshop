@@ -2,8 +2,10 @@
 <!DOCTYPE  properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 
 <properties>
+
     <entry key="home">ui.controller.handler.HomePageHandler</entry>
 
+    <!-- PRODUCT -->
     <entry key="productOverview">ui.controller.handler.product.ProductOverviewHandler</entry>
     <entry key="productFormAdd">ui.controller.handler.product.ProductFormAddHandler</entry>
     <entry key="productFormUpdate">ui.controller.handler.product.ProductFormUpdateHandler</entry>
@@ -12,9 +14,22 @@
     <entry key="productConfirmDelete">ui.controller.handler.product.ProductConfirmDeleteHandler</entry>
     <entry key="productDelete">ui.controller.handler.product.ProductDeleteHandler</entry>
 
-    <entry key="userFormSignUp">ui.controller.handler.user.UserFormSignUpHandler</entry>
+    <!-- USER -->
     <entry key="userOverview">ui.controller.handler.user.UserOverviewHandler</entry>
+    <entry key="userFormSignUp">ui.controller.handler.user.UserFormSignUpHandler</entry>
+    <entry key="userFormUpdate">ui.controller.handler.user.UserFormUpdateHandler</entry>
     <entry key="userSignUp">ui.controller.handler.user.UserSignUpHandler</entry>
+    <entry key="userUpdate">ui.controller.handler.user.UserUpdateHandler</entry>
     <entry key="userConfirmDelete">ui.controller.handler.user.UserConfirmDeleteHandler</entry>
     <entry key="userDelete">ui.controller.handler.user.UserDeleteHandler</entry>
+    <entry key="userCheckPasswordForm">ui.controller.handler.user.UserCheckPasswordFormHandler</entry>
+    <entry key="userCheckPassword">ui.controller.handler.user.UserCheckPasswordHandler</entry>
+    <entry key="userLogin">ui.controller.handler.user.UserLoginHandler</entry>
+    <entry key="userLogout">ui.controller.handler.user.UserLogoutHandler</entry>
+
+    <!-- SHOP -->
+    <entry key="shopCartOverview">ui.controller.handler.shop.ShopCartOverviewHandler</entry>
+    <entry key="shopCartAdd">ui.controller.handler.shop.ShopCartAddHandler</entry>
+
+
 </properties>

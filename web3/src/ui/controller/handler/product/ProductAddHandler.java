@@ -1,16 +1,20 @@
 package ui.controller.handler.product;
 
+import domain.model.NotAuthorizedException;
 import domain.model.Product;
+import domain.model.Role;
 import domain.service.ShopService;
-import ui.controller.handler.HandlerFactory;
-import ui.controller.handler.RequestHandler;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+
 
 public class ProductAddHandler extends RequestHandler {
 
@@ -19,13 +23,16 @@ public class ProductAddHandler extends RequestHandler {
 	}
 
 	@Override
-	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws  IOException, ServletException {
+	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws NotAuthorizedException, IOException, ServletException {
+		Role[] roles = {Role.ADMINISTRATOR};
+		checkRole(request, roles);
 		
 		Map<String, String> errors = new HashMap<String, String>();
 		
 		Product p = new Product();
 		
 		setProductId(request, errors, p);
+		setProductName(request, errors,p);
 		setDescription(request, errors, p);
 		setPrice(request, errors, p);
 

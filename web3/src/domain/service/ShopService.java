@@ -11,13 +11,14 @@ import java.util.List;
 import java.util.Properties;
 
 public class ShopService {
-    private PersonDBSQL personDb;
-    private ProductDBSQL productDb;
+    private PersonRepository userRepository;
+    private ProductDB productRepository;
 
-    public ShopService(Properties properties) {
-        personDb = new PersonDBSQL(properties);
-        productDb = new ProductDBSQL(properties);
+    public ShopService(Properties properties) throws DbException{
+        userRepository = new PersonDbInMemory();
+        productRepository = new ProductDbInMemory();
     }
+
     // PERSON
 
     public User getUser(String id) throws DbException, DomainException {
@@ -25,7 +26,7 @@ public class ShopService {
     }
 
     public List<User> getUsers() throws DbException, DomainException {
-        return this.personDb.getAll();
+        return getUserRepository().getAll();
     }
 
     public void addUser(User user) throws DbException {
@@ -41,12 +42,26 @@ public class ShopService {
     }
 
     private PersonRepository getUserRepository() {
-        return personDb;
+        return userRepository;
     }
 
     public boolean checkPassword(String password, String id) throws NoSuchAlgorithmException, UnsupportedEncodingException, DbException, DomainException {
         User u = getUser(id);
         return u.isCorrectPassword(password);
+    }
+
+    public User getUserIfAuthenticated(String id, String password) throws NoSuchAlgorithmException, UnsupportedEncodingException, DomainException {
+        User u;
+        try {
+            u = getUser(id);
+            if(!u.isCorrectPassword(password)) {
+                u = null;
+            }
+        } catch (DbException e) {
+            u = null;
+        }
+
+        return u;
     }
 
     // PRODUCT
@@ -55,11 +70,11 @@ public class ShopService {
         return getProductRepository().get(productId);
     }
 
-    public List<Product> getProducts() throws DbException {
+    public List<Product> getProducts() throws DbException{
         return getProductRepository().getAll();
     }
 
-    public void addProduct(Product p) throws DbException {
+    public void addProduct(Product p) throws DbException{
         getProductRepository().add(p);
     }
 
@@ -67,11 +82,12 @@ public class ShopService {
         getProductRepository().update(p);
     }
 
-    public void deleteProduct(String id) throws DbException {
+    public void deleteProduct(String id) throws DbException{
         getProductRepository().delete(id);
     }
 
     private ProductDB getProductRepository() {
-        return productDb;
+        return productRepository;
     }
+
 }

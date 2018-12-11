@@ -1,18 +1,21 @@
-package ui.controller.handler.user;
+package controller.handler.user;
 
-import domain.db.DbException;
-import domain.model.User;
-import domain.service.ShopService;
-import ui.controller.handler.HandlerFactory;
-import ui.controller.handler.RequestHandler;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+
+import controller.handler.HandlerFactory;
+import controller.handler.RequestHandler;
+import exception.DBException;
+import exception.NotAuthorizedException;
+import model.user.Role;
+import model.user.User;
+import service.ShopService;
 
 public class UserDeleteHandler extends RequestHandler {
 
@@ -21,8 +24,9 @@ public class UserDeleteHandler extends RequestHandler {
 	}
 
 	@Override
-	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-
+	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws IOException, NotAuthorizedException, ServletException {
+		Role[] roles = {Role.ADMINISTRATOR};
+		checkRole(request, roles);
 		
 		String id = request.getParameter("id");
 		try {
@@ -34,7 +38,7 @@ public class UserDeleteHandler extends RequestHandler {
 			} else {
 				this.handlerFactory.getHandler("userLogout").handleRequest(request, response);
 			}
-		} catch (DbException e) {
+		} catch (DBException e) {
 			Map<String, String> errors = new HashMap<String, String>();
 			errors.put("ShopService deletePerson() error", e.getMessage());
 			request.setAttribute("errors", errors);

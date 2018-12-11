@@ -1,24 +1,29 @@
-package ui.controller.handler.user;
+package controller.handler.user;
 
-import domain.service.ShopService;
-import ui.controller.handler.HandlerFactory;
-import ui.controller.handler.RequestHandler;
+import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+
+import controller.handler.HandlerFactory;
+import controller.handler.RequestHandler;
+import model.user.Role;
+import service.ShopService;
 
 public class UserFormSignUpHandler extends RequestHandler {
-    public UserFormSignUpHandler(ShopService shopService, HandlerFactory handlerFactory) {
-        super(shopService, handlerFactory);
-    }
 
-    @Override
-    public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public UserFormSignUpHandler(ShopService shopService, HandlerFactory handlerFactory) {
+		super(shopService, handlerFactory);
+	}
 
-        RequestDispatcher view = request.getRequestDispatcher("signUp.jsp");
-        view.forward(request, response);
-    }
+	@Override
+	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setAttribute("roles", Role.values());
+		
+		RequestDispatcher view = request.getRequestDispatcher("userFormSignUp.jsp");
+		view.forward(request, response);
+	}
+
 }

@@ -2,6 +2,7 @@ package domain.model.shop;
 
 import domain.model.DomainException;
 import domain.model.Product;
+import domain.model.shop.ProductOrder;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +22,7 @@ public class Cart {
     }
 
     public void addProduct(Product product, int quantity) throws DomainException {
-        ProductOrder order = new ProductOrder(product);
+        ProductOrder order = new ProductOrder(product, quantity);
         productsOrdered.add(order);
     }
 
@@ -34,7 +35,17 @@ public class Cart {
         return null;
     }
 
-
+    public void replaceQuantityOrdered(String productId, int quantity) throws DomainException {
+        if (quantity < 0) {
+            throw new DomainException("Quantity cannot be lower than 0.");
+        }
+        if(quantity == 0) {
+            deleteProduct(productId);
+        } else {
+            ProductOrder order = getOrder(productId);
+            order.setQuantity(quantity);
+        }
+    }
 
     public void deleteProduct(String productId) {
         ProductOrder order = getOrder(productId);
@@ -49,7 +60,7 @@ public class Cart {
         double total = 0;
         Collection<ProductOrder> orders = productsOrdered;
         for(ProductOrder order : orders){
-            total += order.getProductPrice();
+            total += order.getTotalPrice();
         }
         return total;
     }

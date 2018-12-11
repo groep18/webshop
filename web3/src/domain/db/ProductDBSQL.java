@@ -30,13 +30,15 @@ public class ProductDBSQL implements ProductDB {
     public Product get(String id) throws DbException {
 
         try {
-            String sql = "SELECT * FROM " + schema + ".product "
+            String sql;
+            sql = "SELECT * FROM " + schema + ".product "
                     + "WHERE productnummer = ?";
 
             statement = connection.prepareStatement(sql);
             statement.setString(1, id);
 
-            ResultSet result = statement.executeQuery();
+            ResultSet result;
+            result = statement.executeQuery();
 
             if(!result.isBeforeFirst()) {
                 throw new DbException("No product with given ID found.");
@@ -86,7 +88,8 @@ public class ProductDBSQL implements ProductDB {
         }
 
         try {
-            String sql = "SELECT * FROM " + schema + ".product "
+            String sql;
+            sql = "SELECT * FROM " + schema + ".product "
                     + "WHERE productnummer = ?";
 
             statement = connection.prepareStatement(sql);

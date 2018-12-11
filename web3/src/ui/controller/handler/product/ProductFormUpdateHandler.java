@@ -1,17 +1,20 @@
 package ui.controller.handler.product;
 
+import domain.model.NotAuthorizedException;
 import domain.model.Product;
+import domain.model.Role;
 import domain.service.ShopService;
-import ui.controller.handler.HandlerFactory;
-import ui.controller.handler.RequestHandler;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ProductFormUpdateHandler extends RequestHandler {
 
@@ -20,8 +23,12 @@ public class ProductFormUpdateHandler extends RequestHandler {
 	}
 
 	@Override
-	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, NotAuthorizedException {
+		Role[] roles = {Role.ADMINISTRATOR};
+		checkRole(request, roles);
+		
 		String id = request.getParameter("id");
+
 		try {
 			Product p = this.shopService.getProduct(id);
 			request.setAttribute("product", p);
