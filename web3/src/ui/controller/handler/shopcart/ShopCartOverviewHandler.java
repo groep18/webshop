@@ -1,4 +1,4 @@
-package controller.handler.shop;
+package ui.controller.handler.shopcart;
 
 import java.io.IOException;
 
@@ -7,11 +7,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.NotAuthorizedException;
-import model.user.Role;
-import service.ShopService;
+
+import domain.model.NotAuthorizedException;
+import domain.model.Role;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 public class ShopCartOverviewHandler extends RequestHandler {
 

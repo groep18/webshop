@@ -1,4 +1,12 @@
-package controller.handler.user;
+package ui.controller.handler.user;
+
+import domain.model.NotAuthorizedException;
+import domain.model.Role;
+import domain.model.User;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
+
 
 import java.io.IOException;
 
@@ -6,13 +14,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.NotAuthorizedException;
-import model.user.Role;
-import model.user.User;
-import service.ShopService;
+;
 
 public class UserConfirmDeleteHandler extends RequestHandler {
 

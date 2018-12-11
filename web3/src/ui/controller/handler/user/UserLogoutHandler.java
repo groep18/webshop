@@ -1,4 +1,8 @@
-package controller.handler.user;
+package ui.controller.handler.user;
+
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
 
@@ -8,9 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import service.ShopService;
 
 public class UserLogoutHandler extends RequestHandler {
 

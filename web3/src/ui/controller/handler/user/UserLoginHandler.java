@@ -1,4 +1,10 @@
-package controller.handler.user;
+package ui.controller.handler.user;
+
+import domain.model.DomainException;
+import domain.model.User;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -12,11 +18,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.ModelException;
-import model.user.User;
-import service.ShopService;
 
 public class UserLoginHandler extends RequestHandler {
 
@@ -41,7 +42,7 @@ public class UserLoginHandler extends RequestHandler {
 				RequestDispatcher view = request.getRequestDispatcher("index.jsp");
 				view.forward(request, response);
 			}
-		} catch (NoSuchAlgorithmException | UnsupportedEncodingException | ModelException e) {
+		} catch (NoSuchAlgorithmException | UnsupportedEncodingException | DomainException e) {
 			Map<String, String> errors = new HashMap<String, String>();
 			errors.put("Login password algorithm error", e.getMessage());
 			request.setAttribute("errors", errors);

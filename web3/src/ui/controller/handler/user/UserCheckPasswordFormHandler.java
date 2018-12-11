@@ -1,4 +1,4 @@
-package controller.handler.user;
+package ui.controller.handler.user;
 
 import java.io.IOException;
 
@@ -7,9 +7,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import service.ShopService;
+import domain.service.ShopService;
+import ui.controller.handler.HandlerFactory;
+import ui.controller.handler.RequestHandler;
 
 public class UserCheckPasswordFormHandler extends RequestHandler {
 

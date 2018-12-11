@@ -1,4 +1,9 @@
-package controller.handler.user;
+package ui.controller.handler.user;
+
+import domain.model.Role;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
 
@@ -7,10 +12,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import model.user.Role;
-import service.ShopService;
 
 public class UserFormSignUpHandler extends RequestHandler {
 

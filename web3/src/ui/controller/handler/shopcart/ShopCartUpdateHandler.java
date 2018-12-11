@@ -1,4 +1,12 @@
-package controller.handler.shop;
+package ui.controller.handler.shopcart;
+
+import domain.model.DomainException;
+import domain.model.NotAuthorizedException;
+import domain.model.Role;
+import domain.model.shop.Cart;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,13 +17,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.ModelException;
-import exception.NotAuthorizedException;
-import model.shop.Cart;
-import model.user.Role;
-import service.ShopService;
 
 public class ShopCartUpdateHandler extends RequestHandler {
 
@@ -52,7 +53,7 @@ public class ShopCartUpdateHandler extends RequestHandler {
 		//Edit the quantity
 		try {
 			cart.replaceQuantityOrdered(id, quantity);
-		} catch (ModelException e) {
+		} catch (DomainException e) {
 			errors.put("Add to cart error", e.getMessage());
 			request.setAttribute("errors", errors);
 			this.handlerFactory.getHandler("productOverview").handleRequest(request, response);

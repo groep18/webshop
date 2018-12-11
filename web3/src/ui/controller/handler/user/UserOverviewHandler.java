@@ -1,4 +1,4 @@
-package controller.handler.user;
+package ui.controller.handler.user;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -10,14 +10,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.DBException;
-import exception.ModelException;
-import exception.NotAuthorizedException;
-import model.user.Role;
-import model.user.User;
-import service.ShopService;
+import domain.db.DbException;
+import domain.model.DomainException;
+import domain.model.NotAuthorizedException;
+import domain.model.Role;
+import domain.model.User;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 public class UserOverviewHandler extends RequestHandler {
 
@@ -34,7 +34,7 @@ public class UserOverviewHandler extends RequestHandler {
 		try {
 			users = this.shopService.getUsers();
 			request.setAttribute("users", users);
-		} catch (DBException | ModelException e) {
+		} catch (DbException | DomainException e) {
 			Map<String, String> errors = new HashMap<String, String>();
 			errors.put("ShopService getPersons() error", e.getMessage());
 			request.setAttribute("errors", errors);

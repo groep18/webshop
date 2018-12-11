@@ -1,20 +1,18 @@
-package controller.handler.shop;
+package ui.controller.handler.shopcart;
+
+import domain.model.NotAuthorizedException;
+import domain.model.Role;
+import domain.model.shop.Cart;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.NotAuthorizedException;
-import model.shop.Cart;
-import model.user.Role;
-import service.ShopService;
 
 public class ShopCartDeleteHandler extends RequestHandler {
 

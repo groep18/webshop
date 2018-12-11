@@ -1,4 +1,4 @@
-package controller.handler.user;
+package ui.controller.handler.user;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,10 +9,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.NotAuthorizedException;
-import service.ShopService;
+import domain.model.NotAuthorizedException;
+import domain.service.ShopService;
+import ui.controller.handler.HandlerFactory;
+import ui.controller.handler.RequestHandler;
 
 public class UserCheckPasswordHandler extends RequestHandler {
 

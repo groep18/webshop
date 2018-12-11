@@ -1,4 +1,15 @@
-package controller.handler.shop;
+package ui.controller.handler.shopcart;
+
+import domain.db.DbException;
+import domain.model.DomainException;
+import domain.model.NotAuthorizedException;
+import domain.model.Product;
+import domain.model.Role;
+import domain.model.shop.Cart;
+import domain.model.shop.ProductOrder;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,16 +20,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.DBException;
-import exception.ModelException;
-import exception.NotAuthorizedException;
-import model.product.Product;
-import model.shop.Cart;
-import model.shop.ProductOrder;
-import model.user.Role;
-import service.ShopService;
 
 public class ShopCartAddHandler extends RequestHandler {
 
@@ -61,7 +62,7 @@ public class ShopCartAddHandler extends RequestHandler {
 			try {
 				Product p = this.shopService.getProduct(id);
 				cart.addProduct(p, quantity);
-			} catch (ModelException | DBException e) {
+			} catch (DomainException | DbException e) {
 				errors.put("Add to cart error", e.getMessage());
 				request.setAttribute("errors", errors);
 				this.handlerFactory.getHandler("productOverview").handleRequest(request, response);
@@ -71,7 +72,7 @@ public class ShopCartAddHandler extends RequestHandler {
 			//If the order already exists, edit the quantity
 			try {
 				cart.replaceQuantityOrdered(id, quantity);
-			} catch (ModelException e) {
+			} catch (DomainException e) {
 				errors.put("Add to cart error", e.getMessage());
 				request.setAttribute("errors", errors);
 				this.handlerFactory.getHandler("productOverview").handleRequest(request, response);

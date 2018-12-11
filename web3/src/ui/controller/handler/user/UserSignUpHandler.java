@@ -1,18 +1,20 @@
-package controller.handler.user;
+package ui.controller.handler.user;
+
+import domain.model.NotAuthorizedException;
+import domain.model.User;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.NotAuthorizedException;
-import model.user.User;
-import service.ShopService;
 
 public class UserSignUpHandler extends RequestHandler {
 
@@ -41,7 +43,8 @@ public class UserSignUpHandler extends RequestHandler {
 		} else {
 			try {
 				this.shopService.addUser(u);
-				response.sendRedirect("Controller");
+				RequestDispatcher view = request.getRequestDispatcher("index.jsp");
+				view.forward(request, response);
 			} catch(Exception e) {
 				errors.put("Add error", e.getMessage());
 				request.setAttribute("errors", errors);

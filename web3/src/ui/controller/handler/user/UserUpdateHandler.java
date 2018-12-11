@@ -1,4 +1,13 @@
-package controller.handler.user;
+package ui.controller.handler.user;
+
+import domain.db.DbException;
+import domain.model.DomainException;
+import domain.model.NotAuthorizedException;
+import domain.model.Role;
+import domain.model.User;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,14 +18,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.DBException;
-import exception.ModelException;
-import exception.NotAuthorizedException;
-import model.user.Role;
-import model.user.User;
-import service.ShopService;
 
 public class UserUpdateHandler extends RequestHandler {
 
@@ -56,13 +57,13 @@ public class UserUpdateHandler extends RequestHandler {
 				try {
 					this.shopService.updateUser(u);
 					response.sendRedirect("Controller?action=userOverview");
-				} catch (DBException e) {
+				} catch (DbException e) {
 					errors.put("Update error", e.getMessage());
 					request.setAttribute("errors", errors);
 					this.handlerFactory.getHandler("userFormUpdate").handleRequest(request, response);
 				}	
 			}
-		}  catch(ModelException | DBException e) {
+		}  catch(DomainException | DbException e) {
 			errors.put("Update error", e.getMessage());
 			request.setAttribute("errors", errors);
 			this.handlerFactory.getHandler("userOverview").handleRequest(request, response);

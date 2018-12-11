@@ -1,4 +1,12 @@
-package controller.handler.user;
+package ui.controller.handler.user;
+
+import domain.db.DbException;
+import domain.model.NotAuthorizedException;
+import domain.model.Role;
+import domain.model.User;
+import domain.service.ShopService;
+import ui.controller.HandlerFactory;
+import ui.controller.RequestHandler;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,13 +17,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import controller.handler.HandlerFactory;
-import controller.handler.RequestHandler;
-import exception.DBException;
-import exception.NotAuthorizedException;
-import model.user.Role;
-import model.user.User;
-import service.ShopService;
 
 public class UserDeleteHandler extends RequestHandler {
 
@@ -38,7 +39,7 @@ public class UserDeleteHandler extends RequestHandler {
 			} else {
 				this.handlerFactory.getHandler("userLogout").handleRequest(request, response);
 			}
-		} catch (DBException e) {
+		} catch (DbException e) {
 			Map<String, String> errors = new HashMap<String, String>();
 			errors.put("ShopService deletePerson() error", e.getMessage());
 			request.setAttribute("errors", errors);
